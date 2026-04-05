@@ -1,0 +1,81 @@
+body {
+   margin: 0;
+  font-family: "Brush Script MT", cursive, sans-serif;
+ background-color: #000000;
+ color: #EC7FA9;
+}
+header {
+    padding: 5vh 5vw;
+    text-align: center;
+     background-color: #E6F8F9;
+     color: #EC7FA9;
+}
+h1 {
+    font-size: 10vmin;
+    margin-bottom: 1vh;
+
+}
+p {
+    font-size: 5vmin;
+    margin-bottom: 1vh;
+}
+h2 {
+    font-size: 7vmin;
+    margin: 4vh 0 2vh;
+    color: #B7B1F2;
+    text-align: center;
+}
+footer {
+    padding: 5vh 5vw;
+    text-align: center;
+    background-color: #C5EBAA;
+    color: #FFF58A;
+    font-size: 2vmin;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 5vh 5vw;
+}
+.gallery-item {
+   box-shadow: 0 2px 5px #FFF58A;
+   width: 25vmin;
+   border-radius: 8px;
+   background-color: #696FC7;
+   overflow: hidden;
+   box-shadow: 0 2px 5px #696FC7;
+   animation: fadeIn 1s ease-in-out;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #3A8B95;
+   
+}
+.gallery-item p{
+    padding: 1vh 1vw;
+    font-size: 3vmin;
+    color: #A7AAE1;
+    text-align: center;
+}
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; 
+         transform: translateY(2vmin);
+}
+  to { opacity: 1; 
+       transform: translateY(4vmin);}
+}
+.gallery-item img:hover {
+  animation: wiggle 0.5s ease-in-out infinite;
+  border-color: #0099ff;
+}
